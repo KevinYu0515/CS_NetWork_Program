@@ -54,7 +54,7 @@
 
 說明：使用 openssl 提供的 ssl 加密傳輸資料，情境同樣為 Client、Server 數字間減一後傳送，直到 0 為止
 
-1. 在 SecureSocket 資料夾底下使用 openssl 生成 key 和 certificate
+1. 在 SecureSocket 資料夾底下使用 openssl 生成 key 和 certificate  
 `openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -days 365 -out server.cer -config ssl.conf`
 
 2. 由於要抓取 key、certificate 的相對路徑，所以執行程式需要先切換至 SecureSocket 資料夾內，預設使用 localhost:8888
@@ -78,9 +78,9 @@
 - BC 必須等待 BR 建立，才能成功建立 TCP 連線
 - 只有作單向傳遞，也就是說 Sender 沒辦法確認 Receiver 有沒有接收到
 
-使用 shell 依序執行程式（BC、BR 使用 TCP 連線，所以有先後執行的連線關係），按下 Ctrl+D 中止執行
-Sender：預設使用 localhost:6666
-Receiver：預設使用 localhost:8888
-BR：TCP 預設使用 7777 port，MultCast 預設使用 6666 port
-BC：TCP 預設使用 7777 port，MultCast 預設使用 8888 port
+使用 shell 依序執行程式（BC、BR 使用 TCP 連線，所以有先後執行的連線關係），按下 Ctrl+D 中止執行  
+Sender：預設使用 localhost:6666  
+Receiver：預設使用 localhost:8888  
+BR：TCP 預設使用 7777 port，MultCast 預設使用 6666 port  
+BC：TCP 預設使用 7777 port，MultCast 預設使用 8888 port  
 - `source MultiCast/run.sh`
