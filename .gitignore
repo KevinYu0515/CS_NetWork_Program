@@ -1,0 +1,13 @@
+__pycache__
+venv/
+.venv/
+history/
+
+*.db
+*.docx
+*.cer
+*.key
+*.7z
+*.zip
+*.pptx
+.env
