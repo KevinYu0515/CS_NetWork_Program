@@ -10,8 +10,8 @@ class Login(App):
         super().__init__(root, None)
         self.root = root
         self.root.title("ChatRoom")
-        self.width = int(os.getenv("ROOT_WIDTH"))
-        self.height = int(os.getenv("ROOT_HEIGHT"))
+        self.width = 800
+        self.height = 600
 
         # login root grid
         self.root.geometry(f"{self.width}x{self.height}")

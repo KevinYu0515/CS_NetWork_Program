@@ -1,9 +1,3 @@
-####################################################
-#  Network Programming - Unit 5  User Datagram Protocol          
-#  Program Name: SAWSocket.py                                      			
-#  This program implements stop and wait protocol based on UDP.          		
-#  2021.07.19                                                 									
-####################################################
 import socket
 import threading
 import time
@@ -336,7 +330,3 @@ class ReceiveD(threading.Thread):
 			print('Receive daemon closed()')
 	# end of run()
 # end of class ReceiveD
-
-if __name__ == '__main__':
-	print('Hello!!')
-

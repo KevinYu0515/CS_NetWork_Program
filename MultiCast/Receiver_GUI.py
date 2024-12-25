@@ -1,5 +1,4 @@
 import socket
-import struct
 import threading
 import customtkinter as ctk
 from group import JoinGroup

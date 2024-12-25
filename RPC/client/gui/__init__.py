@@ -7,7 +7,7 @@ class App:
     def __init__(self, root, user):
         self.root = root
         self.user = user
-        self.proxy = xmlrpc.client.ServerProxy('http://' + os.getenv("HOSTNAME") + ':' + str(os.getenv("PORT")))
+        self.proxy = xmlrpc.client.ServerProxy('http://localhost:8810/')
         
     def center_window(self, master, width, height):
         screen_width = master.winfo_screenwidth()

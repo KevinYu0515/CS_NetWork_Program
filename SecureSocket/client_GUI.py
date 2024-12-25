@@ -1,5 +1,3 @@
-# D1149371 林鈺凱 資訊三甲
-
 import socket, sys, threading, ssl
 import tkinter as tk
 from tkinter import messagebox

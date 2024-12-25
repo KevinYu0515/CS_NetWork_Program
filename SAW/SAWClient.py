@@ -1,9 +1,3 @@
-####################################################
-#  Network Programming - Unit 5  User Datagram Protocol          
-#  Program Name: 4-SAWClient.py                                      			
-#  This program build a client based on SAWSocket.           		
-#  2021.07.21                                             									
-####################################################
 import SAWSocket
 import sys
 

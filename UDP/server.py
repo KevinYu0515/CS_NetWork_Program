@@ -1,5 +1,3 @@
-# D1149371 林鈺凱 資訊三甲
-
 import socket, threading, random, struct
 
 PORT = 8888

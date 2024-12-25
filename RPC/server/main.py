@@ -1,7 +1,7 @@
 from xmlrpc.server import SimpleXMLRPCServer
 from socketserver import ThreadingMixIn
 from db import DatabaseManager
-import threading
+import threading, os
 
 PORT = 8810
 
@@ -51,16 +51,13 @@ class ChatRoom:
 			res = self.db.get_subject_manager().check_subject(subject_id, username)[0]
 			print(res)
 			return res[0]
-			
-				
-				
 		
 class ThreadXMLRPCServer(ThreadingMixIn, SimpleXMLRPCServer):
 	pass
 
 def main():
 	db = DatabaseManager()
-	server = ThreadXMLRPCServer(('localhost', PORT))
+	server = ThreadXMLRPCServer(("127.0.0.1", 8810))
 	server.register_instance(ChatRoom(db))
 	print('Listen on port  %d' % PORT)
 	try:
